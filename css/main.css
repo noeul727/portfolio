@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+
+/* 네비게이션 이미지 설정 */
+#fp-nav ul li a span {
+  background: url('../img/personal project/apple.png') no-repeat center !important;
+  background-size: contain !important;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 0 !important;
+  border: none !important;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+#fp-nav ul li a:hover span,
+#fp-nav ul li a.active span {
+  background: url('../img/main/backgrand-apple.png') no-repeat center !important;
+  background-size: contain !important;
+  opacity: 1;
+}
+
+/* 기본 툴팁 숨기기 */
+#fp-nav ul li .fp-tooltip {
+  display: none !important;
+}
+
+/* 커스텀 툴팁 스타일 */
+.custom-tooltip {
+  position: absolute !important;
+  top: 0 !important;
+  left: 50px !important;
+  color: #2a2a2a !important;
+  font-family: 'Roboto Condensed' !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 30px !important;
+  height: 30px !important;
+  white-space: nowrap !important;
+  transition: font-weight 0.3s ease;
+}
+
+/* 호버시 폰트 굵게 */
+#fp-nav ul li:hover .custom-tooltip {
+  font-weight: bold !important;
+}
+
+/* 네비게이션 항목 간격 */
+#fp-nav ul li {
+  margin: 30px 0 !important;
+  position: relative !important;
+}
+
+#fp-nav {
+  left: 40px !important;
+}
+
+
+
+
+#wrap{
+  font-family: 'Packy Great', sans-serif;
+}
+
+header {
+  width: 100%;
+  position: relative; /* absolute에서 relative로 변경 */
+  z-index: 999;
+}
+header .inner{
+  align-items: center;
+  text-align: center;
+}
+
+header .inner img{
+  width: 1248px;
+  height: 699px;
+  object-fit: cover;
+}
+
+header .inner h1{
+  text-align: center;
+  align-items: center;
+  font-size: 128px;
+  color: #fd4128;
+  padding-top: 20px;
+}
+
+header .inner h2{
+  text-align: center;
+  align-items: center;
+  font-size: 128px;
+  display: block;
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.home header .inner .top{
+  display: block;
+  width: 200px;
+  height: 150px;
+  background: url(../img/main/go-top.png) no-repeat center;
+  background-size: contain;
+  text-indent: -9999px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 99;
+}
+
+/*header .gnb{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+  left: 10%;
+}
+header .gnb > li > a{
+  font-size: 18px;
+  display: block;
+  padding: 20px 40px;
+  font-weight: 700;
+  color: #2a2a2a;
+}*/
+
+header.active .gnb > li > a{
+  color: #fd4128;
+}
+
+
+.contents h2{
+  text-align: center;
+  align-items: center;
+  font-size: 118px;
+  color: #2a2a2a;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  border-bottom: 15px solid #2a2a2a;
+  width: 100%;
+}
+
+
+.contents .inner .contents-box ul li{
+  font-family: 'Roboto Condensed' !important;
+  font-size: 20px;
+}
+.contents .inner{
+  padding: 20px 250px;
+  margin-top: 40px;
+  line-height: 1.8;
+  padding-top: 180px;
+}
+.contents .inner img{
+  width: 446px;
+  height: 445px;
+  align-items: center;
+  opacity: 0.5;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.contents .inner .content01,.content02,.content03,.content04{
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
