@@ -82,9 +82,47 @@ header .inner h1{
   text-align: center;
   align-items: center;
   font-size: 128px;
-  color: #fd4128;
-  padding-top: 20px;
+  background-color: #035A35;
+  color: #fff;
+  border-bottom: 10px solid #FFED81;
 }
+header .inner .txt-ani p{
+  font-family: 'Roboto Condensed' !important;
+  font-size: 24px;
+  align-items: center;
+  text-align: center;
+  color: #fd4128;
+  display: inline-block;
+  animation: text-to-right 20s linear infinite;
+}
+
+.txt-ani{
+  white-space: nowrap;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+
+@keyframes text-to-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/*오른쪽에서 왼쪽으로 텍스트가 흐르는 애니메이션*/
+@keyframes text-to-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 
 header .inner h2{
   text-align: center;
