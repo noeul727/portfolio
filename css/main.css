@@ -140,7 +140,7 @@ header.active .gnb > li > a{
   left: 50%;
   transform: translate(-50%);
   border-bottom: 15px solid #2a2a2a;
-  width: 100%;
+  width: 1600px;
 }
 
 
@@ -183,20 +183,34 @@ header.active .gnb > li > a{
   padding: 0;
   margin: 0;
   list-style: none; 
-  border-bottom: 2px solid #2a2a2a;              /* 점 제거 */
+  border-bottom: 2px solid #2a2a2a; 
 }
 
 .list01 .last, .list04, .list06, .list07{
-  border-bottom: 5px solid #2a2a2a;  
+  border-bottom: 5px solid #2a2a2a; 
 }
 .contents .inner .date{
   font-weight: 700;
 }
 .contents .inner ul li{
   padding: 10px 20px;
+  padding-left: 50px;
+  text-transform: uppercase;
 }
-
-
+.contents .no-1{
+  width: 170px;
+  height: 136px;
+  position: absolute;
+  top: 10px;
+  left: 300px;
+}
+.contents .top-img{
+  width: 274px;
+  height: 229px;
+  position: absolute;
+  top: 10px;
+  right: 200px;
+}
 
 
 
