@@ -192,7 +192,9 @@ header.active .gnb > li > a{
 .contents .inner .date{
   font-weight: 700;
 }
-
+.contents .inner ul li{
+  padding: 10px 20px;
+}
 
 
 
