@@ -160,17 +160,38 @@ header.active .gnb > li > a{
   align-items: center;
   opacity: 0.5;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%);
+  object-fit: cover;  /* 비율 유지하며 꽉 채움 */
+  z-index: -1;  
 }
 
 .contents .inner .content01,.content02,.content03,.content04{
   font-size: 24px;
 }
 
+.list01{
+  border-bottom: 2px solid #2a2a2a;    
+}
+.list01 .one{
+  border-bottom: 2px solid #2a2a2a;  
+}
+.list02, .list03, .list04, .list05, .list06 {
+  display: flex;                  /* 가로 배치 */
+  justify-content: space-between; /* 양쪽 끝에 배치 */
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+  border-bottom: 2px solid #2a2a2a;              /* 점 제거 */
+}
 
-
+.list01 .last, .list04, .list06, .list07{
+  border-bottom: 5px solid #2a2a2a;  
+}
+.contents .inner .date{
+  font-weight: 700;
+}
 
 
 
