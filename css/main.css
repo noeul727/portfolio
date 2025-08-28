@@ -319,10 +319,34 @@ header.active .gnb > li > a{
   right: 170px;
 }
 
+/* 스킬 패널 페이드 효과를 위한 스타일 */
+.self-introduction .inner .left {
+  transition: opacity 0.5s ease;
+}
 
+.self-introduction .inner .left02 h3{
+  font-size: 32px;
+  display: block;
+  margin-bottom: 30px;
+}
 
+.self-introduction .inner .left02 .left-txt{
+  width: 600px;
+  justify-content: start;
+}
+.self-introduction .inner .left02 .left-txt p{
+  font-family: 'Roboto Condensed' !important;
+  font-size: 16px;
+  color: #000;
+  border: 0;
+  line-height: 1.5;
+  text-align: left;
+}
 
-
+.self-introduction .inner .left02 .left-txt strong{
+  font-size: 20px;
+  font-weight: 700;
+}
 
 
 

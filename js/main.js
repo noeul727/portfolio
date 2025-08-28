@@ -26,8 +26,37 @@ $(document).ready(function(){
       $('#fp-nav ul li').each(function(index){
         $(this).append('<span class="custom-tooltip">' + tooltips[index] + '</span>');
       });
+
+      // 초기 상태: left 영역 내용만 숨김 (공간은 유지)
+      $('.self-introduction .inner .left').css('opacity', '0');
+      
+      // 스킬 버튼 클릭 이벤트
+      $('.self-introduction .right-txt .skill').click(function(e) {
+        e.preventDefault();
+        showSkillPanel();
+      });
+
     }
+
     
   });
+
+  // 스킬 패널 토글 함수
+  function showSkillPanel() {
+    const leftPanel = $('.self-introduction .inner .left');
+    
+    // 현재 opacity 값으로 토글 판단
+    if (leftPanel.css('opacity') == '1') {
+      // 보이는 상태 → 숨기기 (페이드아웃)
+      leftPanel.animate({
+        'opacity': '0'
+      }, 500);
+    } else {
+      // 숨겨진 상태 → 보이기 (페이드인)
+      leftPanel.animate({
+        'opacity': '1'
+      }, 500);
+    }
+  }
   
 });
