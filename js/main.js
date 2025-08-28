@@ -1,7 +1,7 @@
 $(document).ready(function(){
   var page = $('.fullpage').fullpage({
     
-    navigation : true,
+    navigation: true,
     navigationTooltips: ['home','contents', 'introduction', 'personal project', 'team project','BX Design'],
     showActiveTooltip: false, // false로 설정 (우리가 직접 만들 거라서)
     navigationPosition: 'left',
@@ -10,10 +10,10 @@ $(document).ready(function(){
     responsiveWidth: 1024,
 
     //마지막 영역 #fp-nav 숨기기
-    onLeave : function(index, nextIndex, direction){
+    onLeave: function(index, nextIndex, direction){
       if(nextIndex == 6){
         $("#fp-nav").fadeOut();
-      }else{
+      } else {
         $("#fp-nav").fadeIn();
       }
     },
@@ -27,40 +27,41 @@ $(document).ready(function(){
         $(this).append('<span class="custom-tooltip">' + tooltips[index] + '</span>');
       });
 
-      // 초기 상태: left 영역 내용만 숨김 (공간은 유지)
-      $('.self-introduction .inner .left').css('opacity', '0');
-      
-      // 스킬 버튼 클릭 이벤트
-      $('.self-introduction .right-txt .skill').click(function(e) {
-        e.preventDefault();
-        showSkillPanel();
-      });
-
+      // Self-introduction 섹션 버튼 기능 설정
+      setupIntroductionButtons();
     }
-
-    
   });
 
-  // 스킬 패널 토글 함수
-  function showSkillPanel() {
-    const leftPanel = $('.self-introduction .inner .left');
+  // Self-introduction 섹션 버튼 기능 설정
+  function setupIntroductionButtons() {
+    // 초기 상태: about-panel을 기본으로 표시
+    $('.self-introduction .about-panel').addClass('active');
     
-    // 이미 보이는 상태라면 숨기기
-    if (leftPanel.css('opacity') == '1') {
-      leftPanel.animate({
-        'transform': 'translateX(-100%)'
-      }, 500, function() {
-        leftPanel.css('opacity', '0');
-      });
-    } else {
-      // 숨겨진 상태라면 보이기
-      leftPanel.css({
-        'transform': 'translateX(-100%)',
-        'opacity': '1'
-      }).animate({
-        'transform': 'translateX(0%)'
-      }, 500);
-    }
+    // About me 버튼 클릭
+    $('.self-introduction .right-txt .aboutme').click(function(e) {
+      e.preventDefault();
+      showPanel('about-panel');
+    });
+
+    // Skill 버튼 클릭
+    $('.self-introduction .right-txt .skill').click(function(e) {
+      e.preventDefault();
+      showPanel('skill-panel');
+    });
+
+    // Project 버튼 클릭 (다음 섹션으로 이동)
+    $('.self-introduction .right-txt .project').click(function(e) {
+      e.preventDefault();
+      $.fn.fullpage.moveTo(4); // personal-project 섹션으로 이동
+    });
   }
-  
+
+  // 패널 표시 함수
+  function showPanel(panelClass) {
+    // 모든 패널 숨기기
+    $('.self-introduction .panel').removeClass('active');
+    
+    // 선택한 패널만 보이기
+    $('.self-introduction .' + panelClass).addClass('active');
+  }
 });

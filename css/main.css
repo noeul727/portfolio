@@ -242,7 +242,7 @@ header.active .gnb > li > a{
   position: relative;
 }
 
-.self-introduction p {
+.self-introduction .self-tit {
   color: #fd4128;
   font-size: 48px;
   align-items: center;
@@ -354,13 +354,16 @@ header.active .gnb > li > a{
 }
 
 .self-introduction .inner .right-txt .aboutme{
-  top: 100px;
+  top: 120px;
+  right: 60px;
 }
 
 .self-introduction .inner .right-txt .skill{
-  top: 250px;
+  top: 350px;
+  right: 45px;
 }
 
 .self-introduction .inner .right-txt .project{
-  bottom: 100px;
+  bottom: 77px;
+  right: 70px;
 }
