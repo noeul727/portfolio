@@ -371,11 +371,19 @@ header.active .gnb > li > a{
 
 
 
+.personal-project .left img{
+  width: 272px;
+  height: 90px;
+}
 
+.personal-project .left ul li{
+  display: flex;
+}
 
-
-
-
+.personal-project .right img{
+  width: 375px;
+  height: 470px;
+}
 
 
 
