@@ -376,7 +376,7 @@ header.active .gnb > li > a{
   height: 90px;
 }
 
-.personal-project .left ul li{
+.personal-project .left .swiper-slide{
   display: flex;
 }
 
