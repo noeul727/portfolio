@@ -376,8 +376,18 @@ header.active .gnb > li > a{
   height: 90px;
 }
 
-.personal-project .left .swiper-slide{
-  display: flex;
+.personal-project .swiper-wrapper {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex !important;
+}
+.personal-project .swiper-slide {
+  display: flex !important;      /* 플렉스 적용 */
+  align-items: center;           /* 세로 중앙정렬 */
+  list-style: none;              /* li 기본 스타일 제거 */
+  width: 100%;                   /* 슬라이드가 swiper 영역을 꽉 채우도록 */
+  box-sizing: border-box;
 }
 
 .personal-project .right img{
@@ -385,7 +395,11 @@ header.active .gnb > li > a{
   height: 470px;
 }
 
-
+.personal-project .swiper-wrapper,
+.personal-project .swiper-slide {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 
 
 
