@@ -55,4 +55,24 @@ $(document).ready(function(){
       $.fn.fullpage.moveTo(4);
     });
   }
+
+  const project_list = new Swiper(".project-list", {
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+
+    speed: 1000,
+    loop: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 });
