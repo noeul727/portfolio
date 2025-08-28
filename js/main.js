@@ -45,16 +45,20 @@ $(document).ready(function(){
   function showSkillPanel() {
     const leftPanel = $('.self-introduction .inner .left');
     
-    // 현재 opacity 값으로 토글 판단
+    // 이미 보이는 상태라면 숨기기
     if (leftPanel.css('opacity') == '1') {
-      // 보이는 상태 → 숨기기 (페이드아웃)
       leftPanel.animate({
-        'opacity': '0'
-      }, 500);
+        'transform': 'translateX(-100%)'
+      }, 500, function() {
+        leftPanel.css('opacity', '0');
+      });
     } else {
-      // 숨겨진 상태 → 보이기 (페이드인)
-      leftPanel.animate({
+      // 숨겨진 상태라면 보이기
+      leftPanel.css({
+        'transform': 'translateX(-100%)',
         'opacity': '1'
+      }).animate({
+        'transform': 'translateX(0%)'
       }, 500);
     }
   }
