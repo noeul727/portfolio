@@ -299,7 +299,25 @@ header.active .gnb > li > a{
   border-bottom: 15px solid #2a2a2a;
 }
 
-
+.self-introduction .inner .right .right-txt p{
+  color: #fff;
+  cursor: pointer;
+}
+.self-introduction .inner .right .aboutme{
+  position: absolute;
+  top: 385px;
+  right: 158px;
+}
+.self-introduction .inner .right .skill{
+  position: absolute;
+  top: 625px;
+  right: 140px;
+}
+.self-introduction .inner .right .project{
+  position: absolute;
+  bottom: 80px;
+  right: 170px;
+}
 
 
 
