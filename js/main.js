@@ -27,6 +27,7 @@ $(document).ready(function(){
         $(this).append('<span class="custom-tooltip">' + tooltips[index] + '</span>');
       });
     }
+    
   });
   
 });

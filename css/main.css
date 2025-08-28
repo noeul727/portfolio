@@ -252,10 +252,52 @@ header.active .gnb > li > a{
 
 
 
+.self-introduction .inner{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  padding-left: 250px;
+}
 
+.self-introduction .inner .right img{
+  width: 590px;
+  height: 630px;
+}
 
+.self-introduction .inner .right-txt p{
+  color: #000;
+  border: 0;
+  margin: 0;
+  font-size: 24px;
+}
+.self-introduction .inner .right-txt .aboutme{
+  position: absolute;
+  top: 200px;
 
+}
+.self-introduction .inner .left .left-img img{
+  width: 460px;
+  height: 90px;
+  display: block;
+}
 
+.self-introduction .inner .left h3{
+  font-size: 32px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.self-introduction p{
+  color: #fd4128;
+  font-size: 48px;
+  align-items: center;
+  text-align: center;
+  display: block;
+  margin-bottom: 150px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  border-bottom: 15px solid #2a2a2a;
+}
 
 
 
